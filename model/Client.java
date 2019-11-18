@@ -135,7 +135,7 @@ public class Client {
 
                 else System.out.println("Servizio non disponibile");
 
-                System.out.print("Servizio (R=Registrazione, P=Programma del congresso): ");
+                System.out.print("Servizio (C=Conta Righe, E=Elimina Righe): ");
             } // while (!EOF), fine richieste utente
 
         } catch (NotBoundException nbe) {
