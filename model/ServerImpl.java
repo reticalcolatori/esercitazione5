@@ -21,7 +21,7 @@ public class ServerImpl extends UnicastRemoteObject implements RemOp {
     }
 
     @Override
-    public int conta_righe(String fileName, int soglia) throws RemoteException {
+    public synchronized int conta_righe(String fileName, int soglia) throws RemoteException {
 
         try {
 
@@ -69,7 +69,7 @@ public class ServerImpl extends UnicastRemoteObject implements RemOp {
     }
 
     @Override
-    public int elimina_riga(String fileName, int nRiga) throws RemoteException {
+    public synchronized int elimina_riga(String fileName, int nRiga) throws RemoteException {
 
         try {
 
